@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Multi-EVT — anonymous project page and supplementary materials.">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <title>Multi-EVT | Anonymous project page</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Multi-EVT home"><span class="brand-symbol" aria-hidden="true">m<span>·</span></span>Multi-EVT</a>
+    <nav aria-label="Main navigation">
+      <a href="#abstract">Abstract</a><a href="#demos">Demos</a><a href="#method">Method</a><a href="#results">Results</a>
+    </nav>
+    <a class="review-tag" href="#resources"><span></span>Anonymous submission</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+  <aside class="page-index" aria-label="On this page">
+    <span class="eyebrow">On this page</span>
+    <a href="#top">Overview</a><a href="#abstract">Abstract</a><a href="#demos">Visual results</a><a href="#method">Method</a><a href="#results">Experiments</a><a href="#resources">Resources</a>
+    <div class="index-footer">Project page<br><span>For anonymous review</span></div>
+  </aside>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="project-title">
+      <div class="eyebrow hero-kicker"><span class="status-dot"></span><span id="hero-kicker"></span></div>
+      <h1 id="project-title"><span id="project-name">Multi-EVT</span><span class="title-secondary" id="project-subtitle"></span></h1>
+      <p class="hero-summary" id="hero-summary"></p>
+      <p class="authors">Anonymous Authors<span> · </span>Under anonymous review</p>
+      <div class="resource-buttons" id="hero-resources"></div>
+      <div class="draft-note" id="draft-note"><span class="draft-mark">i</span><p id="draft-text"></p></div>
+      <figure class="teaser-figure">
+        <div class="figure-topline"><span><span class="status-dot"></span>PROJECT OVERVIEW</span><span id="teaser-label"></span></div>
+        <img id="teaser-image" src="assets/teaser.svg" alt="Illustrative diagram showing multiple input streams joined into a shared representation and an output trajectory." width="1200" height="450">
+        <figcaption><span>Figure 01</span><p id="teaser-caption"></p></figcaption>
+      </figure>
+      <a class="explore-link" href="#abstract">Explore the project <span aria-hidden="true">↓</span></a>
+    </section>
+    <section id="abstract" class="content-section abstract-section" aria-labelledby="abstract-title">
+      <div class="section-heading"><span class="section-number">01 / THE IDEA</span><h2 id="abstract-title">A closer look at Multi-EVT.</h2></div>
+      <div class="abstract-layout"><div><span class="eyebrow">Abstract</span><p id="abstract-copy" class="abstract-copy"></p></div><div class="takeaways" id="takeaways"></div></div>
+    </section>
+    <section id="demos" class="content-section" aria-labelledby="demos-title">
+      <div class="section-heading heading-with-note"><div><span class="section-number">02 / IN MOTION</span><h2 id="demos-title">See it in action.</h2></div><span class="small-note" id="demos-note"></span></div>
+      <p class="section-intro" id="demos-intro"></p>
+      <div class="demo-tabs" role="tablist" aria-label="Demo categories" id="demo-tabs"></div>
+      <div id="demo-panel" role="tabpanel" tabindex="0"><div class="demo-grid" id="demo-grid"></div></div>
+      <div class="media-footnote"><span class="tiny-square"></span><span id="media-footnote"></span></div>
+    </section>
+    <section id="method" class="content-section method-section" aria-labelledby="method-title">
+      <div class="section-heading"><span class="section-number">03 / UNDER THE HOOD</span><h2 id="method-title">From input to insight.</h2></div>
+      <p class="section-intro" id="method-intro"></p>
+      <figure class="method-figure"><img id="method-image" src="assets/method.svg" alt="Placeholder pipeline with input, encoder, fusion, and output stages." width="1200" height="330"><figcaption><span>Figure 02</span><p id="method-caption"></p></figcaption></figure>
+      <div class="method-steps" id="method-steps"></div>
+    </section>
+    <section id="results" class="content-section" aria-labelledby="results-title">
+      <div class="section-heading heading-with-note"><div><span class="section-number">04 / THE EVIDENCE</span><h2 id="results-title">Measured, side by side.</h2></div><div class="view-switch" role="group" aria-label="Results display"><button type="button" id="chart-toggle" aria-pressed="true">Overview</button><button type="button" id="table-toggle" aria-pressed="false">Table</button></div></div>
+      <p class="section-intro" id="results-intro"></p>
+      <div id="results-chart" class="results-chart"></div>
+      <div id="results-table-wrap" class="table-wrap" hidden><table><caption id="results-caption"></caption><thead id="results-table-head"></thead><tbody id="results-table-body"></tbody></table></div>
+      <p class="results-note" id="results-note"></p>
+      <div class="limitations"><span class="eyebrow">Scope & limitations</span><p id="limitations"></p></div>
+    </section>
+    <section id="resources" class="content-section resources-section" aria-labelledby="resources-title">
+      <div class="section-heading"><span class="section-number">05 / EXPLORE FURTHER</span><h2 id="resources-title">Materials for review.</h2></div>
+      <div class="resource-list" id="resource-list"></div>
+      <details class="citation"><summary>Anonymous citation</summary><div class="citation-inner"><div class="citation-top"><span>BIBTEX · ANONYMOUS DRAFT</span><button id="copy-citation" type="button">Copy</button></div><pre><code id="citation-text"></code></pre><span id="copy-status" role="status" aria-live="polite"></span></div></details>
+    </section>
+    <footer><a class="wordmark" href="#top">Multi-EVT<span class="footer-dot">·</span></a><p>Anonymous project page<span>Prepared for double-anonymous review.</span></p><a class="back-top" href="#top">Back to top ↑</a></footer>
+  </main>
+  <dialog id="media-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><h2 id="dialog-title"></h2><button class="close-dialog" type="button" aria-label="Close media">✕</button></div><div id="dialog-media"></div><p id="dialog-caption"></p></dialog>
+  <noscript><div class="noscript-note">Enable JavaScript to load the project content. This page contains placeholder material for Multi-EVT.</div></noscript>
+</body>
+</html>
